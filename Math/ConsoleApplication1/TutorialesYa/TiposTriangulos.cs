@@ -41,8 +41,7 @@ namespace ConsoleApplication1.TutorialesYa
                     escaleno = escaleno + 1;
                 }       
             }
-          
-          
+                    
             Console.WriteLine("Se ingresaron " + equilatero + " triangulos equilateros.");
             Console.WriteLine("Se ingresaron " + isoceles + " triangulos isoceles.");
             Console.WriteLine("Se ingresaron " + escaleno + " triangulos escalenos.");

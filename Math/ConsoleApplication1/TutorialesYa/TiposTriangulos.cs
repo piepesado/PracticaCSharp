@@ -42,26 +42,24 @@ namespace ConsoleApplication1.TutorialesYa
                 }       
             }
           
+          
+            Console.WriteLine("Se ingresaron " + equilatero + " triangulos equilateros.");
+            Console.WriteLine("Se ingresaron " + isoceles + " triangulos isoceles.");
+            Console.WriteLine("Se ingresaron " + escaleno + " triangulos escalenos.");
+            //Console.ReadKey();
+
             if (equilatero < isoceles && equilatero < escaleno)
             {
                 Console.WriteLine("El triangulo equilatero es el que se ingresó menor cantidad");
             }
-            if (escaleno < equilatero && escaleno < isoceles)
+            if (escaleno < isoceles)
             {
                 Console.WriteLine("El triangulo escaleno es el que se ingresó menor cantidad");
-            }
-            if (isoceles < equilatero && isoceles < escaleno)
-            {
-                Console.WriteLine("El triangulo isoceles es el que se ingresó menor cantidad");
-            }
+            }          
             else
             {
-                Console.WriteLine("Se ingresaron cantidad iguales de triangulos.");
+                Console.WriteLine("El triangulo isoceles es el que se ingresó menor cantida");
             }
-
-            Console.WriteLine("Se ingresaron " + equilatero + " triangulos equilateros.");
-            Console.WriteLine("Se ingresaron " + isoceles + " triangulos isoceles.");
-            Console.WriteLine("Se ingresaron " + escaleno + " triangulos escalenos.");
             Console.ReadKey();
         }
     }

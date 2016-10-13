@@ -7,3 +7,6 @@ c:\users\diegon\documents\visual studio 2015\Projects\Math\ConsoleApplication1\o
 C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\diegon\Source\Repos\PracticaCSharp\Math\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

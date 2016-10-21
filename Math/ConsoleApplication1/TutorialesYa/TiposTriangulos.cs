@@ -21,44 +21,51 @@ namespace ConsoleApplication1.TutorialesYa
 
             for (x = 1; x <= n; x++)
             {
-                Console.WriteLine("Ingrese base del traingulo:");
+                Console.WriteLine("Ingrese base del triangulo:");
                 baseT = int.Parse(Console.ReadLine());
                 Console.WriteLine("Ingrese lado 1 del triangulo:");
                 lado1T = int.Parse(Console.ReadLine());
                 Console.WriteLine("Ingrese lado 2 del triangulo:");
                 lado2T = int.Parse(Console.ReadLine());
 
-                if (baseT == lado1T && lado1T == lado2T)
+                if (baseT == lado1T && baseT == lado2T)
                 {
-                    equilatero = equilatero + 1;
+                    Console.WriteLine("Es un triangulo equilatero");
+                    equilatero++;
                 }
-                if (lado1T == lado2T && lado1T != baseT)
+                else
                 {
-                    isoceles = isoceles + 1;
-                }
-                if (lado1T != lado2T && lado1T != baseT)
-                {
-                    escaleno = escaleno + 1;
-                }       
+                    if (baseT == lado1T || baseT == lado2T || lado1T == lado2T)
+                    {
+                        Console.WriteLine("Es un triangulo isoceles");
+                        isoceles++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("El triangulo es un escaleno");
+                        escaleno++;
+                    }
+                }               
             }
-          
-          
+
             Console.WriteLine("Se ingresaron " + equilatero + " triangulos equilateros.");
             Console.WriteLine("Se ingresaron " + isoceles + " triangulos isoceles.");
-            Console.WriteLine("Se ingresaron " + escaleno + " triangulos escalenos.");
-            //Console.ReadKey();
-
+            Console.WriteLine("Se ingresaron " + escaleno + " triangulos escaleno.");
+                
             if (equilatero < isoceles && equilatero < escaleno)
             {
                 Console.WriteLine("El triangulo equilatero es el que se ingresó menor cantidad");
             }
-            if (escaleno < isoceles)
-            {
-                Console.WriteLine("El triangulo escaleno es el que se ingresó menor cantidad");
-            }          
             else
             {
-                Console.WriteLine("El triangulo isoceles es el que se ingresó menor cantida");
+                if (isoceles < escaleno)
+                {
+                    Console.WriteLine("El triangulo isoceles es el que se ingresó menor cantidad");
+                }
+                else
+                {
+                    Console.WriteLine("El triangulo escaleno es el que se ingresó menor cantidad");
+                }
             }
             Console.ReadKey();
         }

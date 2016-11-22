@@ -11,8 +11,7 @@ namespace ConsoleApplication1.TutorialesYa
         public static void Main(String[] args)
         {
             int numCuenta;
-            float saldo, totalSaldo;
-            saldo = 0;
+            int saldo, totalSaldo;
             totalSaldo = 0;
 
             Console.WriteLine("Ingrse número de cuenta y su saldo. Para salir ingrese valor negativo en número de cuenta.");
@@ -21,31 +20,31 @@ namespace ConsoleApplication1.TutorialesYa
             {
                 Console.WriteLine("Ingrese número de cuenta:");
                 numCuenta = int.Parse(Console.ReadLine());
-                Console.WriteLine("Ingrese saldo de cuenta:");
-                saldo = float.Parse(Console.ReadLine());
-                if (saldo > 0)
+                if (numCuenta >= 0)
                 {
-                    Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Acreedora");
-                    //Console.ReadKey();
-                    totalSaldo = totalSaldo + saldo;
-                }
-                else
-                {
-                    if (saldo < 0)
+                    Console.WriteLine("Ingrese saldo de cuenta:");
+                    saldo = int.Parse(Console.ReadLine());
+                    if (saldo > 0)
                     {
-                        Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Deudora");
-                        //Console.ReadKey();
+                        Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Acreedora");                        
+                        totalSaldo = totalSaldo + saldo;
                     }
                     else
                     {
-                        if (saldo == 0)
+                        if (saldo < 0)
                         {
-                            Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Nula");
-                            //Console.ReadKey();
+                            Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Deudora");                            
+                        }
+                        else
+                        {
+                            if (saldo == 0)
+                            {
+                                Console.WriteLine("La cuenta número " + numCuenta + " tiene estado Nula");                                
+                            }
                         }
                     }
                 }
-            } while (numCuenta < 0);
+            } while (numCuenta >= 0);
             Console.WriteLine("La suma total de las cuentas acreedoras es de :$" + totalSaldo);
             Console.ReadKey();
         }

@@ -23,21 +23,21 @@ namespace ConsoleApplication1.TutorialesYa.Declaración_Clases
             if (x > 0 && y > 0)
             {
                 Console.WriteLine("El punto se ubica en el Primer Cuadrante.");
-                Console.ReadKey();
+                
             }
             else
             {
                 if (x < 0 && y > 0)
                 {
                     Console.WriteLine("El punto se ubica en el Segundo Cuadrante.");
-                    Console.ReadKey();
+                    
                 }
                 else
                 {
                     if (x < 0 && y < 0)
                     {
                         Console.WriteLine("El punto se ubica en el Tercer Cuadrante.");
-                        Console.ReadKey();
+                        
                     }
                     else
                     {
@@ -53,14 +53,14 @@ namespace ConsoleApplication1.TutorialesYa.Declaración_Clases
                 }
             }
             Console.ReadKey();
-            }
+         }
 
-            static void Main (String[) args){
+        // static void Main (string[) args){
 
-                Punto punto1 = new Punto();
-                punto1.
+        //        Punto punto1 = new Punto();
+        //        punto1.
                 
                                         
-        }
+        //}
     }
 }

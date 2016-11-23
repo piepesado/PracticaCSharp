@@ -10,7 +10,7 @@ namespace ConsoleApplication1.TutorialesYa.Declaración_Clases
     {
         private int x, y;
 
-        public void Carga()
+        public static void Carga()
         {
             Console.WriteLine("Ingrese el valor de x:");
             x = int.Parse(Console.ReadLine());
@@ -18,7 +18,7 @@ namespace ConsoleApplication1.TutorialesYa.Declaración_Clases
             y = int.Parse(Console.ReadLine());
         }
 
-        public void Imprimir()
+        public static void Imprimir()
         {
             if (x > 0 && y > 0)
             {
@@ -55,12 +55,13 @@ namespace ConsoleApplication1.TutorialesYa.Declaración_Clases
             Console.ReadKey();
          }
 
-        // static void Main (string[) args){
+        static void Main(String[] args)
 
-        //        Punto punto1 = new Punto();
-        //        punto1.
-                
-                                        
-        //}
-    }
+                Punto punto1 = new Punto();
+        //punto1.
+
+
+
+        }
+}
 }

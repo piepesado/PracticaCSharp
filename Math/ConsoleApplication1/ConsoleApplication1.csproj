@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TutorialesYa\Declaración Clases\Punto.cs" />
+    <Compile Include="TutorialesYa\Declaración Clases\OperacionesMatematicas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

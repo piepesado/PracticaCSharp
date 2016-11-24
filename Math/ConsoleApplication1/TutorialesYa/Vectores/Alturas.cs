@@ -5,8 +5,7 @@ namespace ConsoleApplication1.TutorialesYa.Vectores
     class Alturas
     {
         private float[] alturas;
-        private float promedio = 0;
-        //int masAltas, masBajas;             
+        private float promedio;             
 
         public void CargarAlturas()
         {
@@ -26,10 +25,10 @@ namespace ConsoleApplication1.TutorialesYa.Vectores
 
             for (int f=0; f < 5; f++)
             {
-                suma = suma + alturas[f];
-                promedio = suma / 5;
-                Console.WriteLine("El promedio de las alturas ingresadas es de: " + promedio);
+                suma = suma + alturas[f];               
             }
+            promedio = suma / 5;
+            Console.WriteLine("El promedio de las alturas ingresadas es de: " + promedio);
         }
 
         public void MayorMenor()
@@ -38,7 +37,7 @@ namespace ConsoleApplication1.TutorialesYa.Vectores
             mayor = 0;
             menor = 0;
 
-            for (int f = 0; f > promedio; f++)
+            for (int f = 0; f < promedio; f++)
             {
                 if (alturas[f] > promedio)
                 {

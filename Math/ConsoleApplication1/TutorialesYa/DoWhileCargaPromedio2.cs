@@ -28,8 +28,7 @@ namespace ConsoleApplication1.TutorialesYa
             if (cant != 0)
             {
                 promedio = suma / cant;
-                Console.Write("El promedio de los valores ingresados es:");
-                Console.Write(promedio);
+                Console.Write("El promedio de los valores ingresados es:" + promedio);                
             }
             else
             {

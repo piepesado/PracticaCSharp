@@ -28,7 +28,7 @@ namespace ConsoleApplication1.TutorialesYa
                     }
                     else
                     {
-                        Console.WriteLine("Se ingresóun  úmero de 1 dígito");
+                        Console.WriteLine("Se ingresó un número de 1 dígito");
                     }
                 }
 

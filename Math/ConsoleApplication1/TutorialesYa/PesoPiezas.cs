@@ -18,6 +18,7 @@ namespace ConsoleApplication1.TutorialesYa
             do
             {
                 Console.WriteLine("Ingrese peso de la pieza:");
+                Console.WriteLine("Salir con 0.");
                 peso = int.Parse(Console.ReadLine());
                 if (peso >= 10.2)
                 {
@@ -31,7 +32,7 @@ namespace ConsoleApplication1.TutorialesYa
                     }
                     else
                     {
-                        if (peso > 0)
+                        if (peso < 9.8)
                         {
                             sumaPiezas3++;
                         }

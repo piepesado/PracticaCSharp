@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaRomboTrapecio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TutorialesYa\Vectores\DiezElementos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -55,6 +55,7 @@
     <Folder Include="TutorialesYa\Cadenas de caracteres\" />
     <Folder Include="TutorialesYa\Declaración Clases\" />
     <Folder Include="TutorialesYa\Declaración Métodos\" />
+    <Folder Include="TutorialesYa\Vectores\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -43,7 +43,7 @@ namespace ConsoleApplication1.TutorialesYa
                     {
                         if (porcentaje < 50)
                         {
-                            Console.WriteLine("Nivel malo");
+                            Console.WriteLine("Reprobado");
                             Console.ReadLine();
                         }
                     }

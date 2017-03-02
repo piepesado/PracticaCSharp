@@ -52,10 +52,12 @@ namespace ConsoleApplication1
 
         public double AreaTrapecio()
         {
-            Console.WriteLine("Ingrese base menor del rombo:");
+            Console.WriteLine("Ingrese base menor del trapecio:");
             baseMenor = (double.Parse(Console.ReadLine()));
-            Console.WriteLine("Ingrese base mayor del rombo:");
+            Console.WriteLine("Ingrese base mayor del trapecio:");
             baseMayor = (double.Parse(Console.ReadLine()));
+            Console.WriteLine("Ingrese altura del trapecio:");
+            altura = (double.Parse(Console.ReadLine()));
 
             return (((baseMenor + baseMayor) / 2) * altura);
         }
@@ -71,17 +73,15 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine("El area del trapecio es: " + AreaTrapecio());
             }
-        }
-
-        class EjecutarArea { 
+        }        
 
 
         public static void Main(String figura)
         {
-            //AreaRomboTrapecio Art = new AreaRomboTrapecio();
-            IngresarDatos();
-            MostrarResultado(figura);
-            Console.WriteLine();
+            AreaRomboTrapecio Art = new AreaRomboTrapecio();
+            Art.IngresarDatos();
+            Art.MostrarResultado(figura);
+            Console.ReadLine();
         }
     }
 }
